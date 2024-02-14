@@ -17,6 +17,7 @@
 	let position;
 
 	let thumbsWidth;
+
 	let containerWidth;
 	let initialTranslate = 0;
 	let isPointerDown, pointerDownPos, hasDragged;
