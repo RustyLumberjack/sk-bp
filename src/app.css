@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 4px;
+  font-family: sans-serif;
+}
+
+a {
+  display: inline-block;
+  transition: opacity 0.2s;
+}
+
+a:hover {
+  opacity: 0.95;
+}
+
+#images {
+  width: 100%;
+  max-width: 1200px;
+  display: table;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
