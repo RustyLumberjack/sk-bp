@@ -9,10 +9,10 @@ let bp: BiggerPictureInstance;
 export function biggerPicture(node: HTMLElement) {
 	(async () => {
 		if (!bp) {
-			const BiggerPicture = (await import('bigger-picture/svelte')).default;
-			bp = BiggerPicture({
+			const BiggerPictureThumbnails = (await import('$lib/Thumbnails.svelte')).default;
+			bp = new BiggerPictureThumbnails({
 				target: document.body
-			});
+			}) as unknown as BiggerPictureInstance;
 		}
 		// find links
 		const items = node.querySelectorAll('a');
